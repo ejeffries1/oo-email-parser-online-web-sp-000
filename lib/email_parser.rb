@@ -14,5 +14,6 @@ class EmailAddressParser
   def parse
     email = csv.gsub(/[\s,]/ ," ").split
     email.uniq
+    binding.pry
   end
 end
